@@ -1,0 +1,10 @@
+#text {
+    width: 200px;
+    height: 200px;
+}
+
+#imagem {
+    height: 300px;
+    width: auto;
+    background-image: url(./robotron/fundo.jpg);
+}

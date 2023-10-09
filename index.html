@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Atividade 1</h1>
+    <form>
+        <label for="fname">Nome completo:</label>
+        <input type="text" id="fname" name="fname">
+        <input type="button" value=">>" onclick="separete()">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name">
+        <label for="sname">Sobrenome:</label>
+        <input type="text" id="sname" name="sname">
+    </form>  
+    <hr>
+
+    <h1>Atividade 2</h1>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <label for="peso">peso:</label>
+        <input type="number" id="peso" name="peso">
+        <label for="altura">Altura:</label>
+        <input type="number" id="altura" name="altura">
+        <input type="button" value="Calcular IMC" onclick="calculateimc()">
+    </form>  
+    <textarea id="text"></textarea>
+    <hr>
+
+    <img id="imagem" src="./robotron/robotron.png">
+    <input type="button" value="<<" onclick="previous()">
+    <input type="button" value=">>" onclick="next()">
+
+    <script src="./script.js"></script>
+</body>
+</html>
