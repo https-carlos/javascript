@@ -24,31 +24,3 @@ function calculateimc(){
     text.value = `Olá, ${nome}. o seu IMC é de: ${calcular.toFixed(2)}.`
 }
 //
-
-//TROCAR IMAGEM
-
-var imagens = ["./robotron/robotron-azul.png", "./robotron/robotron-vermelho.png", "./robotron/robotron-rosa.png", "./robotron/robotron-amarelo.png", "./robotron/robotron-branco.png", "./robotron/robotron-preto.png"];
-var contador = 0;
-
-function exibirImagem() {
-    var imagem = document.getElementById("imagem");
-    imagem.src = imagens[contador];
-}
-
-function next() {
-    contador++;
-    if (contador >= imagens.length) {
-        contador = 0; // Voltar ao início se chegarmos ao final das imagens.
-    }
-    exibirImagem();
-}
-
-function previous() {
-    contador--;
-    if (contador < 0) {
-        contador = imagens.length - 1; // Voltar ao final se estivermos no início das imagens.
-    }
-    exibirImagem();
-}
-
-//
